@@ -1,4 +1,5 @@
 <?php
+$pacote = [];
 //Gera o pacote
 for ($i = 1; $i <= 10; $i++) {
     $num = mt_rand(1, 1000);
@@ -19,5 +20,8 @@ foreach($pacote as $num) {
 }
 
 //var_dump($album);
+
+echo "Total no pacote: " . count($pacote) . PHP_EOL;
+echo "Total no álbum: " . count($album) . PHP_EOL;
 
 
