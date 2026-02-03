@@ -5,8 +5,19 @@ for ($i = 1; $i <= 10; $i++) {
     $pacote[] = $num;
 }
 
-var_dump($pacote);
+//var_dump($pacote);
 
 $album = [];
+
+//Cola as figurinhas sem repetir
+foreach($pacote as $num) {
+
+    if (!array_key_exists($num, $album)) {
+        $album[$num] = true;
+    }
+
+}
+
+//var_dump($album);
 
 
